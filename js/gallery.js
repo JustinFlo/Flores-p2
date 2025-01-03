@@ -56,6 +56,18 @@ var mJson;
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
 var mUrl = 'images.json';
 
+//part 3-Get JSON File
+function fetchJSON()
+{
+	mRequest.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			mJson = JSON.parse(mRequest.responseText)
+		   document.getElementById("demo").innerHTML = mRequest.responseText;
+		}
+	};
+	mRequest.open("GET", mUrl, true);
+	mRequest.send();
+}
 
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
 //@param A GalleryImage object. Use this method for an event handler for loading a gallery Image object (optional).
@@ -79,14 +91,12 @@ window.addEventListener('load', function() {
 
 }, false);
 
-function GalleryImage(location, description, date, image) {
+//part 2
+function GalleryImage() {
 	//implement me as an object to hold the following data about an image:
-		this.locationOfImage = location
-		this.descriptionOfImage = description
-		this.dateOfImage = date
-		this.image = image
+		var location
+		var description
+		var date
+		var image
 }
 
-function fetchJSON(){
-	
-}
