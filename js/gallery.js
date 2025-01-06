@@ -32,12 +32,27 @@ function animate() {
 
 /************* DO NOT TOUCH CODE ABOVE THIS LINE ***************/
 
-function swapPhoto() {
-	//Add code here to access the #slideShow element.
-	//Access the img element and replace its source
-	//with a new image from your images array which is loaded 
-	//from the JSON string
-	console.log('swap photo');
+function swapPhoto() {  //part 5: Added functionality to the slideshow in part of the SwapPhoto method
+	if(mCurrentIndex >= mImages.length)
+	{
+		mCurrentIndex = 0;
+	}
+
+	if(mCurrentIndex < 0)
+	{
+		mCurrentIndex = mImages.length - 1;
+	}
+	
+	document.getElementById('photo').src = mImages[mCurrentIndex].img;
+	var loc = document.getElementsByClassName('location');
+	loc[0].innerHTML = "Location:" + mImages[mCurrentIndex].location;
+	var des = document.getElementsByClassName('description');
+	des[0].innerHTML = "Description:" + mImages[mCurrentIndex].description;
+	var dt = document.getElementsByClassName('date');
+	dt[0].innerHTML = "Date:" + mImages[mCurrentIndex].date;
+
+	mLastFrameTime = 0;
+	mCurrentIndex += 1;
 }
 
 // Counter for the mImages array
@@ -61,7 +76,7 @@ function fetchJSON()
 {
 	mRequest.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-			mJson = JSON.parse(mRequest.responseText)
+			mJson = JSON.parse(mRequest.responseText) //part 4
 		   document.getElementById("demo").innerHTML = mRequest.responseText;
 		}
 	};
