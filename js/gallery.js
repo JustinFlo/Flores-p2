@@ -96,6 +96,19 @@ function iterateJSON(mJson) //loop function to add in pictures
 	}
 }
 
+function toggleDetails(){ //Causes arrow to animate upside down and slides the down/up key depending on arrow direction
+	if($(".moreIndicator").hasClass("rot90"))
+	{
+		$(".moreIndicator").removeClass("rot90");
+		$(".moreIndicator").addClass("rot270");
+	}
+	else{
+		$(".moreIndicator").removeClass("rot270");
+		$(".moreIndicator").addClass("rot90");
+	}
+	$(".details").slideToggle("slow", "linear");
+}
+
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
 //@param A GalleryImage object. Use this method for an event handler for loading a gallery Image object (optional).
 function makeGalleryImageOnloadCallback(galleryImage) {
@@ -109,6 +122,11 @@ $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
 //	$('.details').eq(0).hide();
+$("#nextPhoto").position({
+	my: "right bottom",
+	at: "right bottom",
+	of: "#nav"
+})
 	
 });
 
