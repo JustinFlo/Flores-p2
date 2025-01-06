@@ -84,6 +84,18 @@ function fetchJSON()
 	mRequest.send();
 }
 
+function iterateJSON(mJson) //loop function to add in pictures
+{
+	for(x = 0; x < mJson.images.length; x++)
+	{
+		mImages[x] = new GalleryImage();
+		mImages[x].location = mJson.images[x].imgLocation;
+		mImages[x].description = mJson.images[x].description;
+		mImages[x].date = mJson.images[x].date;
+		mImages[x].img = mJson.images[x].imgPath;
+	}
+}
+
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
 //@param A GalleryImage object. Use this method for an event handler for loading a gallery Image object (optional).
 function makeGalleryImageOnloadCallback(galleryImage) {
@@ -96,7 +108,7 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
-	$('.details').eq(0).hide();
+//	$('.details').eq(0).hide();
 	
 });
 
