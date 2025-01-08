@@ -143,7 +143,7 @@ if(mUrl == undefined)
 }
 
 fetchJSON();
-});
+}); //THIS MAKES IT WORK, there is just a delay. Two problems left: Adjust image size, and find functionality for the arrow
 
 window.addEventListener('load', function() {
 	
