@@ -32,27 +32,27 @@ function animate() {
 
 /************* DO NOT TOUCH CODE ABOVE THIS LINE ***************/
 
-function swapPhoto() {  //part 5: Added functionality to the slideshow in part of the SwapPhoto method
-	if(mCurrentIndex >= mImages.length)
-	{
-		mCurrentIndex = 0;
-	}
+function swapPhoto() {
 
-	if(mCurrentIndex < 0)
-	{
-		mCurrentIndex = mImages.length - 1;
-	}
-	
-	document.getElementById('photo').src = mImages[mCurrentIndex].img;
-	var loc = document.getElementsByClassName('location');
-	loc[0].innerHTML = "Location:" + mImages[mCurrentIndex].location;
-	var des = document.getElementsByClassName('description');
-	des[0].innerHTML = "Description:" + mImages[mCurrentIndex].description;
-	var dt = document.getElementsByClassName('date');
-	dt[0].innerHTML = "Date:" + mImages[mCurrentIndex].date;
+  if(mCurrentIndex >= mImages.length)
+  {
+    mCurrentIndex = 0;
+  }
 
-	mLastFrameTime = 0;
-	mCurrentIndex += 1;
+  if(mCurrentIndex < 0) {
+    mCurrentIndex = mImages.length-1;
+  }
+
+  document.getElementById('photo').src = mImages[mCurrentIndex].img;
+  var loc = document.getElementsByClassName('location');
+  loc[0].innerHTML = "Location: " + mImages[mCurrentIndex].location;
+  var des = document.getElementsByClassName('description');
+  des[0].innerHTML = "Description: " + mImages[mCurrentIndex].description;
+  var dt = document.getElementsByClassName('date');
+  dt[0].innerHTML = "Date: " + mImages[mCurrentIndex].date;
+
+  mLastFrameTime = 0;
+  mCurrentIndex += 1;
 }
 
 // Counter for the mImages array
@@ -75,9 +75,10 @@ var mUrl = 'images.json';
 function fetchJSON()
 {
 	mRequest.onreadystatechange = function() {
+		console.log("on ready state change");
 		if (this.readyState == 4 && this.status == 200) {
 			mJson = JSON.parse(mRequest.responseText) //part 4
-		   document.getElementById("demo").innerHTML = mRequest.responseText;
+		   iterateJSON(mJson);
 		}
 	};
 	mRequest.open("GET", mUrl, true);
@@ -96,7 +97,8 @@ function iterateJSON(mJson) //loop function to add in pictures
 	}
 }
 
-function toggleDetails(){ //Causes arrow to animate upside down and slides the down/up key depending on arrow direction
+function toggleDetails()
+{ //Causes arrow to animate upside down and slides the down/up key depending on arrow direction
 	if($(".moreIndicator").hasClass("rot90"))
 	{
 		$(".moreIndicator").removeClass("rot90");
@@ -118,6 +120,7 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 	}
 }
 
+
 $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
@@ -127,7 +130,19 @@ $("#nextPhoto").position({
 	at: "right bottom",
 	of: "#nav"
 })
-	
+	 
+const urlParams = new URLSearchParams(window.location.search);
+
+for (const[key,value] of urlParams) {
+	console.log(`${key}:${value}`);
+	mUrl = value;
+}
+if(mUrl == undefined)
+{
+	mUrl = 'images.json';
+}
+
+fetchJSON();
 });
 
 window.addEventListener('load', function() {

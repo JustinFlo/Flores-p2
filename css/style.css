@@ -30,9 +30,9 @@ body {
 	position: absolute;
 	z-index: 3;
 	opacity: .8;
-	top: 0px;
+	bottom: 10px;
 	left: 45%;
-	top: 0px;
+
 }
 
 .thumbnail {
@@ -59,6 +59,10 @@ body {
 #nextPhoto {
 	height: 42px;
 	width: 42px;
+}
+
+.details p{
+	margin-top: 20px;
 }
 
 #nextPhoto:hover, #prevPhoto:hover{
