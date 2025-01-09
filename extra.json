@@ -1,0 +1,34 @@
+{
+    "images": [
+        {
+            "imgPath": "img/extra/cebu.jpeg",
+            "imgLocation": "Philippines",
+            "description": "Part of the Beach in Cebu",
+            "date": "01/01/2016"
+        },
+        {
+            "imgPath": "img/extra/Manila.jpg",
+            "imgLocation": "Philippines",
+            "description": "Buildings in the night",
+            "date": "01/02/2016"
+        },
+        {
+            "imgPath": "img/extra/Tagaytay.jpg",
+            "imgLocation": "Philippines",
+            "description": "Beautiful Landscapes all around",
+            "date": "01/03/2016"
+        },
+        {
+            "imgPath": "img/extra/Pasay.jpg",
+            "imgLocation": "Philippines",
+            "description": "Mall Of Asia was here",
+            "date": "01/04/2016"
+        },
+        {
+            "imgPath": "img/extra/Batangas.jpg",
+            "imgLocation": "Philippines",
+            "description": "Went Shark Diving here",
+            "date": "01/05/2016"
+        }
+  ]
+}

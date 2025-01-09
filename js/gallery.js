@@ -69,7 +69,8 @@ var mJson;
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-var mUrl = 'images.json';
+var mUrl = 'extra.json';
+
 
 //part 3-Get JSON File
 function fetchJSON()
@@ -84,6 +85,8 @@ function fetchJSON()
 	mRequest.open("GET", mUrl, true);
 	mRequest.send();
 }
+
+
 
 function iterateJSON(mJson) //loop function to add in pictures
 {
