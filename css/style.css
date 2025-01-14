@@ -30,8 +30,9 @@ body {
 	position: absolute;
 	z-index: 3;
 	opacity: .8;
-	bottom: 10px;
+	bottom: 36px;
 	left: 45%;
+	top: 460px
 
 }
 
@@ -58,13 +59,13 @@ img {
 }
 
 #prevPhoto {
-	height: 24px;
-	width: 24px;
+	height: 42px;
+	width: 42px;
 }
 
 #nextPhoto {
-	height: 24px;
-	width: 24px;
+	height: 42px;
+	width: 42px;
 }
 
 .details p{
