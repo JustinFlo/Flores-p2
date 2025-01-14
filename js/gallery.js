@@ -66,7 +66,6 @@ var mImages = [];
 
 // Holds the retrived JSON information
 var mJson;
-
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
 var mUrl = 'extra.json'; //Edits the pictures from images.json to extra.json

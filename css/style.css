@@ -46,19 +46,25 @@ body {
 	font-size: 1.25em;
 }
 
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
 #nav {
 	clear: both;
 	position: relative;
 }
 
 #prevPhoto {
-	height: 42px;
-	width: 42px;
+	height: 24px;
+	width: 24px;
 }
 
 #nextPhoto {
-	height: 42px;
-	width: 42px;
+	height: 24px;
+	width: 24px;
 }
 
 .details p{
