@@ -1,34 +1,82 @@
 {
-    "images": [
+    "images": [        
         {
-            "imgPath": "img/extra/Rutgers.jpg",
-            "imgLocation": "Shi Stadium",
-            "description": "First Rutgers Game I Had Attended, They Lost Because Of My Brother",
-            "date": "11/23/2024"
+            "imgPath": "img/extra/House.jpg",
+            "imgLocation": "Manila, Philippines",
+            "description": "Our current home in the Philippines, very nice and cozy despite outside",
+            "date": "07/11/2024"
+        },       
+        {
+            "imgPath": "img/extra/OldHouse.jpg",
+            "imgLocation": "Manila, Philippines",
+            "description": "My mom's childhood house, still standing strong",
+            "date": "07/12/2024"
+        },        
+        {
+            "imgPath": "img/extra/Tagaytay1.jpg",
+            "imgLocation": "Tagaytay, Philippines",
+            "description": "Up in the moutains, very cold and windy. Great view of the landscape",
+            "date": "07/14/2024"
+        },        
+        {
+            "imgPath": "img/extra/Tagaytay2.jpg",
+            "imgLocation": "Tagaytay, Philippines",
+            "description": "Part 2",
+            "date": "07/14/2024"
+        },         
+        {
+            "imgPath": "img/extra/Hotel.jpg",
+            "imgLocation": "Cebu, Philippines",
+            "description": "Part of our Hotel in Cebu",
+            "date": "07/16/2024"
+        },       
+        {
+            "imgPath": "img/extra/Cebu.jpg",
+            "imgLocation": "Cebu,Philippines",
+            "description": "Beautiful Landscapes all around, picture of the city",
+            "date": "07/16/2024"
+        },        
+        {
+            "imgPath": "img/extra/Island.jpg",
+            "imgLocation": "Cebu, Philippines",
+            "description": "Went to this island on boat as part of our island hopping tour",
+            "date": "07/20/2024"
+        },        
+        {
+            "imgPath": "img/extra/Church.jpg",
+            "imgLocation": "Batangas, Philippines",
+            "description": "Massive church in the middle of the city",
+            "date": "07/23/2024"
+        },        
+        {
+            "imgPath": "img/extra/Mall.jpg",
+            "imgLocation": "Pasay, Philippines",
+            "description": "Image of a Dog in the Mall of Asia",
+            "date": "07/25/2024"
+        },       
+         {
+            "imgPath": "img/extra/History.jpg",
+            "imgLocation": "Batangas, Philippines",
+            "description": "Historical house during the spanish era",
+            "date": "07/28/2024"
         },
         {
+            "imgPath": "img/extra/Guy.jpg",
+            "imgLocation": "Pasay, Philippines",
+            "description": "Saw this statue near the Mall of Asia. Apparently he is a famous character in the Philippines",
+            "date": "07/29/2024"
+        },       
+         {
             "imgPath": "img/extra/FTHS1.jpg",
             "imgLocation": "FTHS",
             "description": "Took A Picture Of The Manalapan Game, Under The Lights When Injured",
             "date": "10/18/2024"
         },
         {
-            "imgPath": "img/extra/Tagaytay.jpg",
-            "imgLocation": "Philippines",
-            "description": "Beautiful Landscapes all around",
-            "date": "01/03/2016"
-        },
-        {
-            "imgPath": "img/extra/Pasay.jpg",
-            "imgLocation": "Philippines",
-            "description": "Mall Of Asia was here",
-            "date": "01/04/2016"
-        },
-        {
-            "imgPath": "img/extra/Batangas.jpg",
-            "imgLocation": "Philippines",
-            "description": "Went Shark Diving here",
-            "date": "01/05/2016"
+            "imgPath": "img/extra/Rutgers.jpg",
+            "imgLocation": "Shi Stadium",
+            "description": "First Rutgers Game I Had Attended, They Lost Because Of My Brother",
+            "date": "11/23/2024"
         }
   ]
 }
