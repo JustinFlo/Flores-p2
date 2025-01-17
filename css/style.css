@@ -68,6 +68,8 @@ img {
 #prevPhoto {
 	height: 42px;
 	width: 42px;
+	margin-bottom: -50px;
+	margin-left: 0%;
 }
 
 #nextPhoto {
